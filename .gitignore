@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sphinx documentation
+build/
+
+# Visual Studio Code
+.vscode
+
+# private notes
+private/
