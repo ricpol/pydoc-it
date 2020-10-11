@@ -22,7 +22,7 @@ sono due hack fastidiosi, che sono difficili da replicare:
   la versione di Python parsando il contenuto di ``Include/patchlevel.h``, 
   che noi, di nuovo, non abbiamo. Questo è un hack molto strano, ma non 
   possiamo farci nulla. 
-  Abbiamo risolto copiando questo file in ``Include/patchlevel.h`` e 
+  Abbiamo risolto copiando questo file in ``Parser/patchlevel.h`` e 
   patchando ``patchlevel.py`` per fargli sapere dov'è il file che cerca. 
 
 Queste patch manuali sono sgradevoli ma necessarie. Purtroppo questo 
