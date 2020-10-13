@@ -8,7 +8,7 @@ Parsing arguments and building values
 
 .. topic:: Traduzione italiana:
 
-   commit: XXX | data: XXX
+   commit: XXXXXXXXXXX | data: XXXX-XX-XX
 
    Questo file deve ancora essere tradotto.
 

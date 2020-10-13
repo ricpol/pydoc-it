@@ -28,7 +28,7 @@ tag viene spiegato anche al lettore finale della documentazione.
 
 I file non ancora tradotti hanno un synctag del tipo ::
 
-    commit: XXX | data: XXX
+    commit: XXXXXXXXXXX | data: XXXX-XX-XX
 
 perché verranno sincronizzati per la prima volta al momento della 
 traduzione.
