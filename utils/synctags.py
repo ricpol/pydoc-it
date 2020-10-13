@@ -25,7 +25,7 @@ Inoltre,
 Si noti che questo elenco non dice nulla sui file che hanno un synctag 
 interno (contrassegnati qui con ``None, None``): questi file potrebbero 
 non essere stati ancora tradotti, e avere quindi un synctag interno del 
-tipo ``commit: XXX | data: XXX``. 
+tipo ``commit: XXXXXXXXXXX | data: XXXX-XX-XX``. 
 
 La variabile ``section_synctags`` riporta i synctag dei file che 
 copriamo "per sezione": il synctag è riportato solo nel file 
@@ -560,7 +560,7 @@ synctags = [
     ['Doc/whatsnew/index.rst', None, None], 
 ]
 
-section_syntags = [
+section_synctags = [
     # dirname, commit hash, commit date
     ['Doc/distutils', None, None], 
     ['Doc/extending', None, None], 
