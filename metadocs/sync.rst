@@ -92,10 +92,10 @@ mantenerli aggiornati.
 Per questo teniamo un registro di questi synctag nel file 
 ``utils/synctags.py``. 
 
-Questo modulo contiene in ogni caso un elenco di tutti i file della 
-documentazione, e per ciascuno indica se il synctag si trova all'interno 
-del file, oppure nel file ``index.rst`` della sua sezione, oppure 
-appunto nello stesso ``synctags.py``. 
+Questo modulo contiene un elenco dei file della documentazione, e per 
+ciascuno indica se il synctag si trova all'interno del file, oppure nel 
+file ``index.rst`` della sua sezione, oppure appunto nello stesso 
+``synctags.py``. 
 
 La directory ``Doc/Parser`` contiene dei file che nella repository 
 originale si trovano altrove, e che non fanno parte della documentazione 

@@ -20,14 +20,16 @@ La variabile ``synctags`` riporta tutti i file della documentazione.
 Inoltre, 
 
 - riporta il synctag dei file che non possono averlo internamente; 
-- riporta ``None, None`` per i file che hanno il proprio synctag interno; 
-- riporta ``"-", "-"`` per i file mantenuti in sincrono "per sezione";
-- riporta ``None, None`` per gli ``index.rst`` di queste sezioni. 
+- riporta ``None, None`` per i file che hanno il proprio synctag interno.
 
 Si noti che questo elenco non dice nulla sui file che hanno un synctag 
 interno (contrassegnati qui con ``None, None``): questi file potrebbero 
 non essere stati ancora tradotti, e avere quindi un synctag interno del 
 tipo ``commit: XXX | data: XXX``. 
+
+La variabile ``section_synctags`` riporta i synctag dei file che 
+copriamo "per sezione": il synctag è riportato solo nel file 
+``index.rst`` della sezione corrispondente.
 
 La variabile ``funny_synctags`` elenca i file "irregolari" che sono 
 fuori posto rispetto alla repository originale CPython (si veda sempre 
@@ -115,39 +117,6 @@ synctags = [
     ['Doc/data/refcounts.dat', '037245c5ac4', '2020-10-09'], 
 
     ['Doc/distributing/index.rst', None, None], 
-
-    ['Doc/distutils/apiref.rst', "-", "-"], 
-    ['Doc/distutils/builtdist.rst', "-", "-"], 
-    ['Doc/distutils/commandref.rst', "-", "-"], 
-    ['Doc/distutils/configfile.rst', "-", "-"], 
-    ['Doc/distutils/examples.rst', "-", "-"], 
-    ['Doc/distutils/extending.rst', "-", "-"], 
-    ['Doc/distutils/index.rst', None, None], 
-    ['Doc/distutils/introduction.rst', "-", "-"], 
-    ['Doc/distutils/packageindex.rst', "-", "-"], 
-    ['Doc/distutils/setupscript.rst', "-", "-"], 
-    ['Doc/distutils/sourcedist.rst', "-", "-"], 
-    ['Doc/distutils/uploading.rst', "-", "-"], 
-    ['Doc/distutils/_setuptools_disclaimer.rst', "-", "-"], 
-
-    ['Doc/extending/building.rst', "-", "-"], 
-    ['Doc/extending/embedding.rst', "-", "-"], 
-    ['Doc/extending/extending.rst', "-", "-"], 
-    ['Doc/extending/index.rst', None, None], 
-    ['Doc/extending/newtypes.rst', "-", "-"], 
-    ['Doc/extending/newtypes_tutorial.rst', "-", "-"], 
-    ['Doc/extending/windows.rst', "-", "-"], 
-
-    ['Doc/faq/design.rst', "-", "-"], 
-    ['Doc/faq/extending.rst', "-", "-"], 
-    ['Doc/faq/general.rst', "-", "-"], 
-    ['Doc/faq/gui.rst', "-", "-"], 
-    ['Doc/faq/index.rst', None, None], 
-    ['Doc/faq/installed.rst', "-", "-"], 
-    ['Doc/faq/library.rst', "-", "-"], 
-    ['Doc/faq/programming.rst', "-", "-"], 
-    ['Doc/faq/python-video-icon.png', "-", "-"], 
-    ['Doc/faq/windows.rst', "-", "-"], 
 
     ['Doc/howto/argparse.rst', None, None], 
     ['Doc/howto/clinic.rst', None, None], 
@@ -549,18 +518,6 @@ synctags = [
     ['Doc/library/__future__.rst', None, None], 
     ['Doc/library/__main__.rst', None, None], 
 
-    ['Doc/reference/compound_stmts.rst', "-", "-"], 
-    ['Doc/reference/datamodel.rst', "-", "-"], 
-    ['Doc/reference/executionmodel.rst', "-", "-"], 
-    ['Doc/reference/expressions.rst', "-", "-"], 
-    ['Doc/reference/grammar.rst', "-", "-"], 
-    ['Doc/reference/import.rst', "-", "-"], 
-    ['Doc/reference/index.rst', None, None], 
-    ['Doc/reference/introduction.rst', "-", "-"], 
-    ['Doc/reference/lexical_analysis.rst', "-", "-"], 
-    ['Doc/reference/simple_stmts.rst', "-", "-"], 
-    ['Doc/reference/toplevel_components.rst', "-", "-"], 
-
     ['Doc/tools/rstlint.py', '2d6097d027e', '2018-10-12'], 
     ['Doc/tools/susp-ignored.csv', '13d52c26869', '2020-03-10'], 
     ['Doc/tools/extensions/asdl_highlight.py', '7f03445d01d', '2020-07-20'], 
@@ -579,33 +536,6 @@ synctags = [
     ['Doc/tools/templates/indexsidebar.html', '19e3e002641', '2020-05-19'], 
     ['Doc/tools/templates/layout.html', '552951563cd', '2019-06-16'], 
     ['Doc/tools/templates/opensearch.xml', '46761ec7c29', '2014-10-29'], 
-
-    ['Doc/tutorial/appendix.rst', "-", "-"], 
-    ['Doc/tutorial/appetite.rst', "-", "-"], 
-    ['Doc/tutorial/classes.rst', "-", "-"], 
-    ['Doc/tutorial/controlflow.rst', "-", "-"], 
-    ['Doc/tutorial/datastructures.rst', "-", "-"], 
-    ['Doc/tutorial/errors.rst', "-", "-"], 
-    ['Doc/tutorial/floatingpoint.rst', "-", "-"], 
-    ['Doc/tutorial/index.rst', None, None], 
-    ['Doc/tutorial/inputoutput.rst', "-", "-"], 
-    ['Doc/tutorial/interactive.rst', "-", "-"], 
-    ['Doc/tutorial/interpreter.rst', "-", "-"], 
-    ['Doc/tutorial/introduction.rst', "-", "-"], 
-    ['Doc/tutorial/modules.rst', "-", "-"], 
-    ['Doc/tutorial/stdlib.rst', "-", "-"], 
-    ['Doc/tutorial/stdlib2.rst', "-", "-"], 
-    ['Doc/tutorial/venv.rst', "-", "-"], 
-    ['Doc/tutorial/whatnow.rst', "-", "-"], 
-
-    ['Doc/using/cmdline.rst', "-", "-"], 
-    ['Doc/using/editors.rst', "-", "-"], 
-    ['Doc/using/index.rst', None, None], 
-    ['Doc/using/mac.rst', "-", "-"], 
-    ['Doc/using/unix.rst', "-", "-"], 
-    ['Doc/using/venv-create.inc', "-", "-"], 
-    ['Doc/using/windows.rst', "-", "-"], 
-    ['Doc/using/win_installer.png', "-", "-"], 
 
     ['Doc/whatsnew/2.0.rst', None, None], 
     ['Doc/whatsnew/2.1.rst', None, None], 
@@ -628,6 +558,16 @@ synctags = [
     ['Doc/whatsnew/3.9.rst', None, None], 
     ['Doc/whatsnew/changelog.rst', None, None], 
     ['Doc/whatsnew/index.rst', None, None], 
+]
+
+section_syntags = [
+    # dirname, commit hash, commit date
+    ['Doc/distutils', None, None], 
+    ['Doc/extending', None, None], 
+    ['Doc/faq', None, None], 
+    ['Doc/reference', None, None], 
+    ['Doc/tutorial', None, None], 
+    ['Doc/using', None, None], 
 ]
 
 funny_synctags = [
