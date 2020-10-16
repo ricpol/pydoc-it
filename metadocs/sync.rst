@@ -52,10 +52,8 @@ La data del commit non è essenziale, ma è comoda da leggere per l'utente
 finale, e ci semplifica la vita quando dobbiamo poi cercare le 
 differenze. 
 
-Si noti che ``format="%h"`` restituisce le *prime* 11 cifre, mentre 
-nella "history" di un file su GitHub vediamo le *ultime* 7 cifre. 
-Questo in effetti può confondere le idee, ma per al lettore occasionale 
-basta confrontare la data. 
+Si noti che ``format="%h"`` restituisce le prime 11 cifre, mentre 
+nella "history" di un file su GitHub vediamo solo le prime 7. 
 
 Sincronizzare per file o per sezione.
 -------------------------------------
