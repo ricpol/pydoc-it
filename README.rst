@@ -22,8 +22,8 @@ Vuoi collaborare alla traduzione?
 Sei il benvenuto, e grazie in anticipo! 
 
 Per prima cosa, guarda il contenuto della directory ``metadocs``, a 
-partire dal suo ``README``: troverai tutto quello che occorre per 
-iniziare il lavoro!
+partire dal suo `README <metadocs/README.rst>`_: troverai tutto quello 
+che occorre per iniziare il lavoro!
 
 Copyright.
 ^^^^^^^^^^
